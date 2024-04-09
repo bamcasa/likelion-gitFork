@@ -18,8 +18,12 @@ def calculator():
         print("The result is ", result)
 
     elif operation == '/':
-        result = num1 / num2
-        print("The result is ", result)
+        #분모가 0인지 확인합니다.
+        if num2 == 0:
+            print("Error: Cannot divide by 0.")
+        else:
+            result = num1 / num2
+            print("The result is ", result)
 
     else:
         print("Invalid operation. Please choose from +, -, *, /.")

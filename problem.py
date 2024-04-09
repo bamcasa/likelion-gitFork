@@ -18,8 +18,11 @@ def calculator():
         print("The result is ", result)
 
     elif operation == '/':
-        result = num1 / num2
-        print("The result is ", result)
+        if num2 == 0:
+            print("You can't divide by zero")
+        else:
+            result = num1 / num2
+            print("The result is ", result)
 
     else:
         print("Invalid operation. Please choose from +, -, *, /.")

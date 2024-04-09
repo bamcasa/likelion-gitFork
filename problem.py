@@ -19,7 +19,7 @@ def calculator():
 
     elif operation == '/':
         if num2 == 0:
-            return;
+            return print("ZeroDivisionError: float division by zero");
         result = num1 / num2
         print("The result is ", result)
 

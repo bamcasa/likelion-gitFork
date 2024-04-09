@@ -18,6 +18,9 @@ def calculator():
         print("The result is ", result)
 
     elif operation == '/':
+        while(num2 == 0):
+            print("num2 is zero")
+            num2 = float(input("Enter second number: "))
         result = num1 / num2
         print("The result is ", result)
 

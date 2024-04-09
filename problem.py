@@ -18,8 +18,17 @@ def calculator():
         print("The result is ", result)
 
     elif operation == '/':
+
+        """ 0으로 나눌 수 없음 -> ZeroDivisionError
         result = num1 / num2
         print("The result is ", result)
+        """
+        
+        try:
+            result = num1 / num2
+            print("The result is ", result)
+        except ZeroDivisionError:
+            print("0으로 나눌 수 없습니다.")
 
     else:
         print("Invalid operation. Please choose from +, -, *, /.")

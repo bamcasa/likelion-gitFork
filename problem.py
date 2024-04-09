@@ -23,7 +23,7 @@ def calculator():
         print("The result is", result)
 
     except ValueError:
-        print("Invalid input. Please enter valid numeric values.")
+        print("Invalid input.  Please enter valid numeric values.")
     except Exception as e:
         print("An error occurred:", e)
 
